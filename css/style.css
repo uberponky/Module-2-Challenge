@@ -74,6 +74,15 @@ i {
   color: var(--accent)
 }
 
+figure {
+  margin-block: 0px;
+  margin-inline: 0px;
+}
+
+ul {
+  padding-inline: 0px;
+}
+
 /* container */
 /* this constrains pages on screens wider than 1140px */
 .container {
@@ -82,7 +91,6 @@ i {
   padding: 0px 40px;
   margin: 0px auto;
 }
-
 
 /* nav header */
 
@@ -168,7 +176,6 @@ nav li a:hover {
   width: 100%;
   height: 80vh;
   min-height: 600px;
-  max-height: 1200px;
   display: grid;
   grid-template-areas:
     "item-1 item-2 item-3"
@@ -207,7 +214,6 @@ nav li a:hover {
   border-radius: 25px;
   display: grid;
   overflow: hidden;
-  background-color: yellow;
 }
 
 
@@ -261,4 +267,109 @@ footer {
   background-color: var(--primary);
   padding: 15px;
   font-size: 0.8em;
+}
+
+/* responsive queries */
+/* -- tablets */
+@media only screen and (max-width : 1024px) {
+  /* global */
+  body {
+    font-size: 13px;
+  }
+
+  /* portfolio */
+  .overlay {
+    opacity: 1;
+    background: linear-gradient(0deg, rgba(0,0,0,0.6) 12%, rgba(0,0,0,0) 50%);
+    background-color: rgba(0,0,0,0);
+  }
+
+  #portfolio .section-content {
+    height: 160vh;
+    grid-template-areas:
+    "item-1 item-2"
+    "item-3 item-2"
+    "item-3 item-4"
+    "item-5 item-6";
+  }
+
+  /* #portfolio img {
+    height: 300px;
+  } */
+}
+
+/* -- smartphones ----------- */
+@media only screen and (max-width : 768px) {
+  /* global */
+  body {
+    font-size: 12px;
+  }
+
+  /* container*/
+  .container {
+    padding: 0px 30px;
+  }
+
+  /* nav */
+  .nav-content {
+    height: 120px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 15px;
+  }
+  
+  nav ul {
+    justify-content: center;
+  }
+
+  /* about */
+  #about .section-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-bio {
+    width: 100%;
+  }
+  
+  .about-headshot {
+    width: 100%;
+  }
+
+  /* portfolio */
+  #portfolio .section-content {
+    height: auto;
+    grid-template-areas:
+    "item-1"
+    "item-2"
+    "item-3"
+    "item-4"
+    "item-5"
+    "item-6";
+    grid-template-rows: repeat(6, 300px);
+  }
+
+  #portfolio img {
+    height: 300px;
+  }
+  
+  /* contact*/
+  #contact ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  #contact li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #contact li a {
+    text-align: center;
+    font-size: 0.8em;
+  }
+  
 }
