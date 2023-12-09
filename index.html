@@ -5,77 +5,123 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lernantino // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Rory | Web Developer</title>
+  <link rel="stylesheet" href="./css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4e27f107ca.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <!-- main logo / nav -->
-  <header>
-    <h1>Rory<span>.</span></h1>
-    <nav>
-      <ul>
-        <li>
-          <a>About</a>
-        </li>
-        <li>
-          <a>Portfolio</a>
-        </li>
-        <li>
-          <a>Contact</a>
-        </li>
-      </ul>
-    </nav>
+  <header id="site-nav">
+    <div class="container">
+      <div class="nav-content">
+        <h1>Rory Simmonds<span class="lg bullet">.</span></h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+   </div>
   </header>
 
-  <main class="page-wrapper">
+  <main class="container">
     <!-- about -->
     <section class="page-section" id="about">
+      <!-- heading -->
       <div>
-        <h2>About<span>.</span></h2>
+        <h2 class="section-header">About<span class="sm bullet">.</span></h2>
       </div>
-      <div>
-        <div>
+      <!-- content -->
+      <section class="section-content">
+        <div class="about-bio">
           <h3>Hi, I'm Rory.</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Quam ipsam ad veniam, consequuntur modi recusandae error! 
-            Possimus dolorum unde quia ullam alias culpa quasi corpo
-            assumenda repellendus minima aut, eius vel reiciendis in 
-            officia iure! Minima ipsa iusto fugit atque eius.
+            I'm an aspiring Front-End Developer living in the UK, I
+            currently work for myself through my business - Blank Box
+             - and hope to offer Front-End Development as a service.
+          </p>
+          <p>
+            When I'm not designing or learning, my hobbies include
+            game development, squash and gardening.
+          </p>
+          <p>
+            Keep scrolling for my portfolio of works and to find out 
+            how to get in touch!
           </p>
         </div>
-        <div>
+        <div class="about-headshot">
           <figure>
             <img src="./images/rory-bio-picture.jpg" alt="Rory's Headshot"/>
           </figure>
         </div>
-      </div>
+      </section>
     </section>
 
     <!-- portfolio -->
-    <section class="page-section" id="work">
+    <section class="page-section" id="portfolio">
       <div>
-        <h2>Portfolio<span>.</span></h2>
+        <h2 class="section-header">Portfolio<span class="sm bullet">.</span></h2>
       </div>
-      <div>
-        <article>
-          <i></i>
-          <h3>Project 1</h3>
-          <p>web, application</p>
+      <div class="section-content">
+        <article class="portfolio-item item-1">
+          <img src="../images/02-portfolio-4.jpg">
+          <div class="overlay">
+            <i></i>
+            <h3>Project 1</h3>
+            <p>web, application</p>
+          </div>
         </article>
-        <article>
-          <i></i>
-          <h3>Project 2</h3>
-          <p>web, application</p>
+        <article class="portfolio-item item-2">
+          <img src="../images/02-portfolio-2.jpg">
+          <div class="overlay">
+            <i></i>
+            <h3>Project 2</h3>
+            <p>web, application</p>
+          </div>
         </article>
-        <article>
-          <i></i>
-          <h3>Project 3</h3>
-          <p>web, application</p>
+        <article class="portfolio-item item-3">
+          <img src="../images/02-portfolio-3.jpg">
+          <div class="overlay">
+            <i></i>
+            <h3>Project 3</h3>
+            <p>web, application</p>
+          </div>
+        </article>
+        <article class="portfolio-item item-4">
+          <img src="../images/02-portfolio-3.jpg">
+          <div class="overlay">
+            <i></i>
+            <h3>Project 4</h3>
+            <p>web, application</p>
+          </div>
+        </article>
+        <article class="portfolio-item item-5">
+          <img src="../images/02-portfolio-3.jpg">
+          <div class="overlay">
+            <i></i>
+            <h3>Project 5</h3>
+            <p>web, application</p>
+          </div>
+        </article>
+        <article class="portfolio-item item-6">
+          <img src="../images/02-portfolio-3.jpg">
+          <div class="overlay">
+            <i></i>
+            <h3>Project 6</h3>
+            <p>web, application</p>
+          </div>
         </article>
       </div>
     </section>
@@ -83,26 +129,37 @@
     <!-- contact -->
     <section class="page-section contact" id="contact">
       <div>
-        <h2>Contact<span>.</span></h2>
+        <h2 class="section-header">Contact<span class="sm bullet">.</span></h2>
       </div>
-      <div>
+      <div class="section-content">
+        <p>
+          Think I'm the right match for your next project - or just
+          want to ask me a question?
+        </p>
+        <p>
+          Use the details below to get in touch.
+        </p>
         <ul>
           <li>
-            <i></i>
-            blankbox.business
+            <i class="fa-solid fa-envelope"></i>
+            <a href="https://blankbox.business/">blankbox.business</a>
           </li>
           <li>
-            <i></i>
-            rory@blankbox.business
+            <i class="fa-solid fa-globe"></i>
+            <a href="mailto:rory@blankbox.business">rory@blankbox.business</a>
           </li>
           <li>
-            <i></i>
-            07739 519 483
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:07739 519 483">07739 519 483</a>
           </li>
         </ul>
       </div>
     </section>
   </main>
+  <footer>
+    <span>Thanks for stopping by!</span>
+  </footer>
 </body>
 
 </html>
+
