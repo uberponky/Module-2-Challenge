@@ -7,7 +7,7 @@
   --primary: #f7f0e7;
   --text: #333;
   --text-unfocus: #777;
-  --accent: #cc6600;
+  --accent: #ff8000;
   --contrast: white;
   --header-font: 'Mulish', sans-serif;
   --body-font: 'Source Code Pro', monospace;
@@ -47,6 +47,7 @@ a {
   margin: 0;
   font-family: var(--header-font);
   text-decoration: none;
+  color: var(--text)
 }
 
 p {
@@ -67,6 +68,10 @@ p {
 
 .sm {
   font-size: 1.3em;
+}
+
+i {
+  color: var(--accent)
 }
 
 /* container */
@@ -138,17 +143,23 @@ nav li a:hover {
 /* about */
 #about .section-content {
   display: flex;
-
+  gap: 10px;
 }
 
-.about-bio, .about-headshot {
-  flex: 1 1 0;
+.about-bio {
+  flex: 1 1 100%;
+  width: 0;
+}
+
+.about-headshot {
+  flex: 1 1 50%;
   width: 0;
 }
 
 .about-headshot img{
   width: 100%;
   object-fit: contain;
+  border-radius: 25px;
 }
 
 /* portfolio */
@@ -226,7 +237,27 @@ nav li a:hover {
 }
 
 
-/* .portfolio-item.item-1 {
-  background-image: url("../images/02-portfolio-1.jpg");
-  background-size: cover;
-}  */
+/* contact */
+#contact ul {
+  display: inline-flex;
+  justify-content: flex-start;
+  gap: 30px;
+  margin: 0px;
+  padding-inline-start: 0px;
+  padding-top: 30px;
+}
+
+#contact li {
+  display: inline;
+  font-size: 1.2em;;
+}
+
+/* Footer */
+footer {
+  margin-top: 60px;
+  width: 100%;
+  text-align: center;
+  background-color: var(--primary);
+  padding: 15px;
+  font-size: 0.8em;
+}
