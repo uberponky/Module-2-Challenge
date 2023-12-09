@@ -9,14 +9,14 @@
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <!-- main logo / nav -->
-  <header class="site-nav">
+  <header id="site-nav">
     <div class="container">
-      <div class="content">
+      <div class="nav-content">
         <h1>Rory Simmonds<span class="lg bullet">.</span></h1>
         <nav>
           <ul>
@@ -38,11 +38,13 @@
   <main class="container">
     <!-- about -->
     <section class="page-section" id="about">
+      <!-- heading -->
       <div>
         <h2 class="section-header">About<span class="sm bullet">.</span></h2>
       </div>
-      <div>
-        <div>
+      <!-- content -->
+      <section class="section-content">
+        <div class="about-bio">
           <h3>Hi, I'm Rory.</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -52,12 +54,12 @@
             officia iure! Minima ipsa iusto fugit atque eius.
           </p>
         </div>
-        <div>
+        <div class="about-headshot">
           <figure>
             <img src="./images/rory-bio-picture.jpg" alt="Rory's Headshot"/>
           </figure>
         </div>
-      </div>
+      </section>
     </section>
 
     <!-- portfolio -->
