@@ -248,6 +248,7 @@ nav li a:hover {
 #contact ul {
   display: inline-flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
   gap: 30px;
   margin: 0px;
   padding-inline-start: 0px;
